@@ -2,22 +2,22 @@
 
 pkgname=libfprint-ftexx00
 pkgver=1.94.4_20250112
-pkgrel=1
+pkgrel=2
 pkgdesc="Proprietary driver for FocalTech FTE3600, FTE4800, FTE6600 and FTE6900 fingerprint readers"
 arch=('x86_64')
-url="https://github.com/ftfpteams/ubuntu_spi"
+url="https://github.com/oneXfive/ubuntu_spi"
 license=('unknown')
 groups=('fprint')
 depends=('gcc-libs' 'glib2' 'glibc' 'libgudev' 'libgusb' 'openssl' 'pixman' 'nss' 'focaltech-spi-dkms')
-makedepends=('git' 'tar')
+makedepends=('tar')
 optdepends=('fprintd: D-Bus service to access fingerprint readers')
 provides=('libfprint-2.so' 'libfprint=1.94.4')
 conflicts=('libfprint')
-source=("git+https://github.com/ftfpteams/ubuntu_spi.git")
-sha256sums=('SKIP')
+source=("https://github.com/oneXfive/ubuntu_spi/raw/refs/heads/main/libfprint-2-2_1.94.4+tod1-0ubuntu1~22.04.2_spi_20250112_amd64.deb")
+sha256sums=('b48c93c3732f90aabbcc520e5538faeffbb87bb6847a01d03e14ea157f1d36c1')
 
 prepare() {
-  cd "$srcdir/ubuntu_spi"
+  cd "$srcdir"
 
   # Find the latest debian package by YYYYMMDD format
   latest_deb=$(ls *.deb 2>/dev/null | grep -E '[0-9]{8}' | sed -n 's/.*\([0-9]\{8\}\).*/\1 &/p' | sort -n | tail -1 | cut -d' ' -f2-)
@@ -39,7 +39,7 @@ EOF
 }
 
 package() {
-  cd "$srcdir/ubuntu_spi"
+  cd "$srcdir"
 
   # Install library file
   install -Dm755 "usr/lib/x86_64-linux-gnu/libfprint-2.so.2.0.0" \
