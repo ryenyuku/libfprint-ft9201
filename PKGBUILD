@@ -15,7 +15,7 @@ provides=('libfprint-2.so' 'libfprint=1.94.4')
 conflicts=('libfprint')
 source=("libfprint-2.so.2.0.0" "libgusb.so.2" "60-libfprint-2.rules")
 sha256sums=('33be46c6ed984a81380d3dfb80f88cdde0057043992e3d86767501bf4a6698ed'
-            '7e41d014028719faf42463a227ba25e60049dfabcfc520e89c2de77a580d8762'
+            '04af98a8a9c2528966c93cea3c3fd5c1b67b002a65a2e875e70e025d28419da6'
             '34cc642650e74033f6ac4199b6a27f15e792252779e015248e8725ba36324f1a')
 
 package() {
