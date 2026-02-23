@@ -13,7 +13,7 @@ makedepends=('tar')
 optdepends=('fprintd: D-Bus service to access fingerprint readers')
 provides=('libfprint-2.so' 'libfprint=1.94.4')
 conflicts=('libfprint')
-source=("libfprint-2-2_1.94.4+tod1-0ubuntu1~22.04.2_amd64_20250219.deb")
+source=("https://github.com/ryenyuku/libfprint-ft9201/releases/download/1.94.4_20250219/libfprint-2-2_1.94.4+tod1-0ubuntu1.22.04.2_amd64_20250219.deb")
 sha256sums=('fe8c5ebb685718075e1fc04f10378c001e149b80c283d2891318a50e0588401a')
 
 prepare() {
