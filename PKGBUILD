@@ -13,7 +13,8 @@ makedepends=('tar' 'patchelf')
 optdepends=('fprintd: D-Bus service to access fingerprint readers')
 provides=('libfprint-2.so' 'libfprint=1.94.4')
 conflicts=('libfprint')
-source=("https://github.com/ryenyuku/libfprint-ft9201/releases/download/1.94.4_20250219/libfprint-2-2_1.94.4+tod1-0ubuntu1.22.04.2_amd64_20250219.deb" "libgusb.so.2")
+source=("https://github.com/ryenyuku/libfprint-ft9201/releases/download/1.94.4_20250219/libfprint-2-2_1.94.4+tod1-0ubuntu1.22.04.2_amd64_20250219.deb"
+        "libgusb.so.2::https://github.com/ryenyuku/libfprint-ft9201/releases/download/1.94.4_20250219/libgusb.so.2")
 sha256sums=('fe8c5ebb685718075e1fc04f10378c001e149b80c283d2891318a50e0588401a'
             '04af98a8a9c2528966c93cea3c3fd5c1b67b002a65a2e875e70e025d28419da6')
 
