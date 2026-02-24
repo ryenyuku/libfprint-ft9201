@@ -3,7 +3,7 @@
 pkgname=libfprint-ft9201
 pkgver=1.94.4_20250219
 pkgrel=1
-pkgdesc="Proprietary driver for FocalTech FT9201 fingerprint readers"
+pkgdesc="Proprietary driver for FocalTech FT9201, FT9349 and HOLTEK fingerprint readers"
 arch=('x86_64')
 url="https://github.com/ryenyuku/libfprint-ft9201"
 license=('unknown')

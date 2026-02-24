@@ -1,5 +1,5 @@
 pkgbase = libfprint-ft9201
-	pkgdesc = Proprietary driver for FocalTech FT9201 fingerprint readers
+	pkgdesc = Proprietary driver for FocalTech FT9201, FT9349 and HOLTEK fingerprint readers
 	pkgver = 1.94.4_20250219
 	pkgrel = 1
 	url = https://github.com/ryenyuku/libfprint-ft9201
